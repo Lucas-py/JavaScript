@@ -1,0 +1,6 @@
+Typeof / tipo de, verificando o tipo da variavel em Js {
+    exemplo:
+    Typeof 'google' = Str "String"
+    Typeof 6 = Inteiro
+    Typeof null = objeto // para o Js null e um objeto
+} 
