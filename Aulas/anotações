@@ -1,6 +1,47 @@
 Typeof / tipo de, verificando o tipo da variavel em Js {
     exemplo:
     Typeof 'google' = Str "String"
-    Typeof 6 = Inteiro
+    Typeof 6 = Inteiro // number
     Typeof null = objeto // para o Js null e um objeto
-} 
+ 
+ // Number.parseInt convertando para int, Number.pasertFloat para números real
+ // Number. para proprio Js decidir entre inteiro e real, para transforma. 
+ // Número para string, String(valor) ou n.ToString()
+}
+
+Formatação em texto: exemplo{
+ var nome = 'quaklquer'
+ var idade = 15
+ var nota = 5.5
+ print('o Aluno ${nome} de ${idade} tirou a nota ${nota}')
+
+ .length // para verifica o tamanho de uma string
+ .toUpperCase() // deixa tudo para maiúsculo
+ .toLowCase() // deixa tudo minúsculas
+}
+
+
+document{
+    write // escreve 
+
+formatçaõ em number
+  .toFixed() para todos os numbers 
+  exemplo{
+    n1 = 15.2
+    n1.toFixed(2)
+    n1 fica = 15.20
+   }
+  .toFixed().replace // trocando ' . ' por ' , '
+  exemplo {
+    n1 = 15.5
+    n1.toFixed(2).replace(' . ' , ' , ')
+    n1  agora ficou = 15,50
+   }
+ // um pouco avançado
+
+ .toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) // localização de estilos monétarios
+
+}
+
+
+
