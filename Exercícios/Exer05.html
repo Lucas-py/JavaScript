@@ -17,7 +17,8 @@
     <script>
         var salario = Number(window.prompt('digite seu salário'))
         var nome = window.prompt('Escreva seu nome')
-        document.write(`Ola, Sr.${nome} o seu salário é ${salario.toLocaleString(`pt-br`, {style: 'currency', currency: 'BRL'})} <br>`)
+        document.write(`Ola, Sr.${nome} o seu salário em BRL ${salario.toLocaleString(`pt-br`, {style: 'currency', currency: 'BRL'})} <br>`)
+        document.write(`Ola, Sr.${nome} o seu salário em DOLAR ${salario.toLocaleString(`pt-br`, {style: 'currency', currency: 'USD'})} <br>`)
         document.write(`Volte sempre Sr.${nome.toLocaleUpperCase()}`) 
     </script>
 </body>
