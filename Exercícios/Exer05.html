@@ -1,25 +1,43 @@
 <!DOCTYPE html>
+<!--Dom = Conjunto de objetos de-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOOM</title>
     <style>
         body{
+            background: #ff5E84;
+            color: white;
             font: normal 20pt Arial;
             text-align: center;
-            background-color: #ff5E84;
-            color: white;
         }
     </style>
 </head>
 <body>
+    <h1>Iniciando em DOM</h1>
+
+    <p>Vai resultado</p>
+
+    <p>Aqui vai o <strong>DOM</strong> em Jv </p>
+
+    <div id="msg">clique em min</div>
+
     <script>
-        var salario = Number(window.prompt('digite seu salário'))
-        var nome = window.prompt('Escreva seu nome')
-        document.write(`Ola, Sr.${nome} o seu salário em BRL ${salario.toLocaleString(`pt-br`, {style: 'currency', currency: 'BRL'})} <br>`)
-        document.write(`Ola, Sr.${nome} o seu salário em DOLAR ${salario.toLocaleString(`pt-br`, {style: 'currency', currency: 'USD'})} <br>`)
-        document.write(`Volte sempre Sr.${nome.toLocaleUpperCase()}`) 
+        var corpo = window.document.body // para acessa body não precisa do get
+        var p1 = window.document.getElementsByTagName('p')[1]  // pegando a primeira tag p o index e usado para indica qual tag p quero pegar
+        /*window.document.write('Esyá escrito assim: '  + p1.innerText) // escrevendo a tag p1 
+        corpo.style.background = 'blue' mudando background do corpo
+        p1.style.color = 'black' // mudando a cor da tag p
+        window.document.write('Aqui vai: ' + p1.innerHTML) //innerHTML vem com  a formatação que já esta na tag p
+        var msg = window.document.getElementById('msg')
+        msg.style.background = 'white'
+        msg.style.color = '#ff5E84'
+        msg.style.textAlign */
+
+        var d = window.document.querySelector('div#msg') // por seletor
+        d.style.color = 'blue'
+
     </script>
 </body>
 </html>

@@ -80,5 +80,76 @@ Operadores{
 
 }
 
+Conjunção e disjunção{
+
+   Disjunção precisa de apenas um argumento como verdadeiro
+    Simbolgia ' || '
+
+   Conjunção precisa que os dois elementos sejam verdadeiros
+    Simbologia ' && '
+
+   Ordem
+   a > b && a % 2 == 0  // Primeiros os operadores aritimetico depois os operacionais e por ultimo o operador lógico
+   
+   Sena mesma impresão tiver um 'e' ou um 'ou' e um 'não'
+   ordem de execução é {
+
+     1 - não: !
+     2 - e: &&
+     3 - ou: || 
+   }
+    Pratica de Leitura{
+      idade <= 15 && idade >= 17  // idade esta entre 15 e 17
+      salario == 1500 && != 'm'   // salario e igual a 1500 e o sexo e diferente de homem ?
+    }
+    Operador ternario{
+      Simbologia: teste ' True ? False : '
+      exemplo:{
+        var media = 6
+
+        Pergunta      True       False
+        media > 7 ? 'aprovado' : 'reprovado'
+        resultado séra 'reprovado'
+
+        media += 3
+        media = 9
+
+        Pergunta      True       False
+        media > 7 ? 'aprovado':'reprovado'
+        resultado agora: 'aprovado'
+      }
+    }
+
+}
+
+dom{
+  O que é DOM ?
+  R: DOM ('D'ocumento 'O'bject 'M'odel)  tradução = Modelo de Objetos para documentos
+  é um conjunto de objetos dentro do navegador que vai da caesso
+  aos documentos internos do seu website
+
+  Árvore dom{
+
+                   windpw
+                     *
+           ***********************       
+           *         *           *
+        location   document    history  
+                     *
+                    html
+                     *
+             *****************
+             *               *
+            head            body
+             *               *
+          ********       ************
+          *      *       *   *  *   *
+         meta  title     h1  p  p  div
+  
+  }
+  
+}
+
+
 
 

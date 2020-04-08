@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        
         body{
-            background-color: #ff5E84;
-            color: white;
             font: normal 20pt Arial;
-        }
-        h1{
-            text-align: center;
-        }
-        p{
             text-align: center;
         }
     </style>
-    <title>Titulo</title>
+
 </head>
 <body>
-    <h1>Olá mundo 03</h1>
-    <p>Jesus Cristo é o SENHOR</p>
-    <script>
-        var n1 = Number(window.prompt('Digite um número')) // retorna string
-        var n2 = Number(window.prompt('digite outro número')) // retorna string
-        var s = (n1 + n2)
-         
-        window.alert(`A soma: ${n1} + ${n2} = ${s}`)
 
+
+    <script>
+        var nome = window.prompt('qual e o seu nome ?')
+        document.write(`Ola Sr.${nome} ! Seu nome tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toLocaleUpperCase()} <br>`)  // escrevendo nome em maiúsculo  
+        document.write(`Seu nome minúsculo e ${nome.toLowerCase()}<br>`)
     </script>
 </body>
 </html>
